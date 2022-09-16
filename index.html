@@ -6,15 +6,45 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;600&display=swap" rel="stylesheet">
     <title>Hello, world!</title>
   </head>
   <body class="bg-dark">
-    <h1>Hello, world!</h1>
-
-
     <section>
-        <div class="row">
+        <div class="row g-0">
             <div class="col-lg-7">
+              <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/img-1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>First slide label</h5>
+                      <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/img-2.jpg" alt="">" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Second slide label</h5>
+                      <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
                 
 
             </div>
@@ -22,9 +52,28 @@
                 <div class="px-lg-5 pt-lg-4 pb-lg-3 p-4">
                     <img src="img/Logo.svg"  class="img-fluid">
                 </div>
-                <h1 class="text-light">Bienvenido de vuelta</h1>
-                
 
+                <div class="px-lg-5 py-lg-4 p-4">
+                  <h1 class="font-weight-bold mb-4">Bienvenido de vuelta</h1>
+                  <form class="mb-5">
+                    <div class="mb-4">
+                      <label for="exampleInputEmail1" class="form-label font-weight-bold">Email</label>
+                      <input type="email" class="form-control bg-dark-x border-0" placeholder="Ingresa tu Email" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-4">
+                      <label for="exampleInputPassword1" class="form-label font-weight-bold" >Contraseña</label>
+                      <input type="password" class="form-control bg-dark-x border-0 mb-2" placeholder="Ingresa tu Contraseña" id="exampleInputPassword1">
+                    <a href="#" id="emailHelp" class="form-text text-muted text-decoration-none">Has olvidado tu contraseña?</a>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Iniciar sesión</button>
+                  </form>
+                  <p class="font-weight-bold text-center text-muted">O iniciar sesión con</p>
+
+                  <div class="d-flex justify-content-around">
+                    <button type="submit" class="btn btn-outline-light flex-grow-1 mr-2">Google</button>
+                    <button type="submit" class="btn btn-outline-light  flex-grow-1 ml-2">Facebook
+                  </div>
+                </div>
             </div>
         </div>
     </section>
