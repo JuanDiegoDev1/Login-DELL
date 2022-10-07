@@ -9,11 +9,23 @@ body{
     color:var(--light);
 
 }
-.bd-dark{background-color: var(--dark)!important;
+.bg-dark{background-color: var(--dark)!important;
 }
 .bg-dark-x{background-color:var(--dark-x) }
 
 .form-control, .btn{
     min-height: 3.125rem;
     line-height: initial;
+}
+.img-1{
+    background-image: url('../img/img-1.jpg');
+    background-size: cover;
+    background-position: center;
+
+}
+.img-2{
+    background-image: url('../img/img-1.jpg');
+    background-size: cover;
+    background-position: center;
+
 }
